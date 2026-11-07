@@ -1,48 +1,48 @@
 cmake_minimum_required(VERSION 3.20)
-project(test C)
+project(directxTest C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(test main.c)
+add_executable(directxTest main.c)
 
 # Pentium (P54C) codegen; Win95-era API surface in the headers.
-target_compile_options(test PRIVATE -march=pentium -mtune=pentium)
-target_compile_definitions(test PRIVATE _WIN32_WINNT=0x0400 WINVER=0x0400 _WIN32_WINDOWS=0x0400)
+target_compile_options(directxTest PRIVATE -march=pentium -mtune=pentium)
+target_compile_definitions(directxTest PRIVATE _WIN32_WINNT=0x0400 WINVER=0x0400 _WIN32_WINDOWS=0x0400)
 # Use CRTDLL's own printf family. Otherwise C99+ mode routes printf to mingw-w64's
 # __mingw_printf (libmingwex), which is prebuilt for i686 and contains CMOV -> #UD on a P5.
 # Side effect: no %lld/%zu/%Lf (CRTDLL doesn't support them).
-target_compile_definitions(test PRIVATE __USE_MINGW_ANSI_STDIO=0)
+target_compile_definitions(directxTest PRIVATE __USE_MINGW_ANSI_STDIO=0)
 
 # --- DirectX 5.0 ---
 # include/ holds DX5-pinned copies of the mingw-w64 (Wine-derived, LGPL) DirectX headers;
 # it is searched before the toolchain's own headers. The *_VERSION macros select the DX5
 # struct layouts (DDCAPS, DSBUFFERDESC, DIDEVCAPS, D3DDEVICEDESC, ...) - the DX5 runtime
 # rejects the larger DX6+/DX7+ dwSize values, and DirectInputCreate rejects version > 0x0500.
-target_include_directories(test BEFORE PRIVATE ${CMAKE_SOURCE_DIR}/include)
-target_compile_definitions(test PRIVATE
+target_include_directories(directxTest BEFORE PRIVATE ${CMAKE_SOURCE_DIR}/include)
+target_compile_definitions(directxTest PRIVATE
         DIRECTDRAW_VERSION=0x0500
         DIRECT3D_VERSION=0x0500
         DIRECTSOUND_VERSION=0x0500
         DIRECTINPUT_VERSION=0x0500)
 # Import libs for ddraw.dll / dsound.dll / dinput.dll (DX5 runtime) + static GUIDs.
 # Add d3drm / dplayx here if you use Retained Mode or DirectPlay.
-target_link_libraries(test PRIVATE ddraw dsound dinput dxguid user32 gdi32)
+target_link_libraries(directxTest PRIVATE ddraw dsound dinput dxguid user32 gdi32)
 
 # PE header: subsystem + OS version 4.0, otherwise Win95's loader refuses the image.
 # Use "console" for main()/printf programs, "windows" for WinMain GUI programs.
-target_link_options(test PRIVATE
+target_link_options(directxTest PRIVATE
         -static
         -Wl,--subsystem,console:4.0
         -Wl,--major-os-version,4 -Wl,--minor-os-version,0)
 
 # P5 guard (see cmake/check-p5.cmake), run on the unstripped image so function names are
 # available; Release/MinSizeRel are stripped afterwards (replaces the old -s link flag).
-add_custom_command(TARGET test POST_BUILD
+add_custom_command(TARGET directxTest POST_BUILD
         COMMAND ${CMAKE_COMMAND} -DOBJDUMP=${CMAKE_OBJDUMP} -DNM=${CMAKE_NM}
-                -DEXE=$<TARGET_FILE:test> -P ${CMAKE_SOURCE_DIR}/cmake/check-p5.cmake
+                -DEXE=$<TARGET_FILE:directxTest> -P ${CMAKE_SOURCE_DIR}/cmake/check-p5.cmake
         VERBATIM)
 if(CMAKE_BUILD_TYPE MATCHES "^(Release|MinSizeRel)$")
-    add_custom_command(TARGET test POST_BUILD
-            COMMAND ${CMAKE_STRIP} $<TARGET_FILE:test>
+    add_custom_command(TARGET directxTest POST_BUILD
+            COMMAND ${CMAKE_STRIP} $<TARGET_FILE:directxTest>
             VERBATIM)
 endif()
