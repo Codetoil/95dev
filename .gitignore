@@ -1,0 +1,3 @@
+# Per-host build outputs: each machine builds its own (see toolchain/README.md).
+/sysroot/
+cmake-build*/

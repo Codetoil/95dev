@@ -1,0 +1,24 @@
+{
+  "version": 6,
+  "configurePresets": [
+    {
+      "name": "win95-debug",
+      "displayName": "Win95 (mingw-w64 i686) Debug",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/cmake-build-win95-debug",
+      "toolchainFile": "${sourceDir}/win95-toolchain.cmake",
+      "cacheVariables": { "CMAKE_BUILD_TYPE": "Debug" }
+    },
+    {
+      "name": "win95-release",
+      "displayName": "Win95 (mingw-w64 i686) MinSizeRel",
+      "inherits": "win95-debug",
+      "binaryDir": "${sourceDir}/cmake-build-win95-release",
+      "cacheVariables": { "CMAKE_BUILD_TYPE": "MinSizeRel" }
+    }
+  ],
+  "buildPresets": [
+    { "name": "win95-debug", "configurePreset": "win95-debug" },
+    { "name": "win95-release", "configurePreset": "win95-release" }
+  ]
+}
