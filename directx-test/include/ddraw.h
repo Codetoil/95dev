@@ -28,7 +28,7 @@ extern "C" {
 #endif /* defined(__cplusplus) */
 
 #ifndef	DIRECTDRAW_VERSION
-#define	DIRECTDRAW_VERSION	0x0700
+#define	DIRECTDRAW_VERSION	0x0500
 #endif /* DIRECTDRAW_VERSION */
 
 /*****************************************************************************
