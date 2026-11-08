@@ -196,7 +196,7 @@ static void test_dsound(HWND hwnd) {
 
     ZeroMemory(&bd, sizeof bd);
     bd.dwSize = sizeof bd;               /* 20 bytes: DX5 layout, no guid3DAlgorithm */
-    bd.dwFlags = DSBCAPS_STATIC;
+    bd.dwFlags = DSBCAPS_STATIC | DSBCAPS_GLOBALFOCUS;
     bd.dwBufferBytes = bytes;
     bd.lpwfxFormat = &wf;
     hr = IDirectSound_CreateSoundBuffer(ds, &bd, &buf, NULL);
