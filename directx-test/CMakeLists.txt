@@ -1,17 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 project(directxTest C)
 
-set(directxTest PROPERTIES
-        CMAKE_C_STANDARD 90
-        CMAKE_C_STANDARD_REQUIRED ON
-        CMAKE_C_EXTENSIONS OFF
-)
-set(directxTest PROPERTIES
-        CMAKE_CXX_STANDARD 98
-        CMAKE_CXX_STANDARD_REQUIRED ON
-        CMAKE_CXX_EXTENSIONS OFF
-)
-
 # 2. Add compiler-specific flags to break or disable post-1997 features
 if(MSVC)
     target_compile_options(directxTest PRIVATE
@@ -31,6 +20,11 @@ elseif(CMAKE_CXX_COMPILER_ID STREQUAL "GNU" OR CMAKE_CXX_COMPILER_ID MATCHES "Cl
 endif()
 
 add_executable(directxTest main.c)
+set_target_properties(directxTest PROPERTIES
+        C_STANDARD 90
+        C_STANDARD_REQUIRED ON
+        C_EXTENSIONS OFF
+)
 
 # Pentium (P54C) codegen; Win95-era API surface in the headers.
 target_compile_options(directxTest PRIVATE -march=pentium -mtune=pentium)
