@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
+    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="test" targetName="test" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="win95-debug" PROFILE_DISPLAY_NAME="Win95 (mingw-w64 i686) Debug" ENABLED="true" FROM_PRESET="true" GENERATION_DIR="$PROJECT_DIR$/cmake-build-win95-debug" />
+      <configuration PROFILE_NAME="win95-release" PROFILE_DISPLAY_NAME="Win95 (mingw-w64 i686) MinSizeRel" ENABLED="true" FROM_PRESET="true" GENERATION_DIR="$PROJECT_DIR$/cmake-build-win95-release" />
+      <configuration PROFILE_NAME="win95-debug - win95-debug" ENABLED="true" FROM_PRESET="true" GENERATION_DIR="$PROJECT_DIR$/cmake-build-win95-debug" />
+      <configuration PROFILE_NAME="win95-release - win95-release" ENABLED="true" FROM_PRESET="true" GENERATION_DIR="$PROJECT_DIR$/cmake-build-win95-release" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="af5aeb6d-4fed-4951-87f9-e8b345bd0918" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../directx-test/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../directx-test/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../directx-test/.idea/editor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../directx-test/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../directx-test/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../directx-test/.idea/test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../directx-test/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:win95-release" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Codetoil"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Codetoil/95dev.git",
+    "accountId": "05ed56d3-cdba-4453-9fa3-42f948b7fc0c"
+  }
+}]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///home/codetoil/95dev/test/main.c" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0175790441651722" />
+      <entry key="MS500" value="1.4715447078806314" />
+      <entry key="S2" value="2.765509607122288" />
+      <entry key="S5" value="4.141307650645987" />
+      <entry key="S10" value="4.933543839000263" />
+      <entry key="S30" value="5.664682672055573" />
+      <entry key="S60" value="6.036700941479726" />
+      <entry key="M2" value="6.385670110360262" />
+      <entry key="M5" value="6.709145649060818" />
+      <entry key="M10" value="6.845555654918087" />
+      <entry key="M15" value="6.894904511966176" />
+      <entry key="M30" value="6.946351806222435" />
+      <entry key="H1" value="6.972894193179762" />
+      <entry key="H2" value="6.9863758270306855" />
+      <entry key="H4" value="6.993169989759503" />
+      <entry key="D1" value="6.998859166469488" />
+      <entry key="W1" value="6.999836962475081" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9494348198783616" />
+      <entry key="MS500" value="1.4514111970759545" />
+      <entry key="S2" value="2.7557252020802205" />
+      <entry key="S5" value="4.135104206268846" />
+      <entry key="S10" value="4.929760787318902" />
+      <entry key="S30" value="5.663184281741492" />
+      <entry key="S60" value="6.035856954604858" />
+      <entry key="M2" value="6.3851946937236645" />
+      <entry key="M5" value="6.708934276461316" />
+      <entry key="M10" value="6.845445381805331" />
+      <entry key="M15" value="6.894829881980486" />
+      <entry key="M30" value="6.946313908159754" />
+      <entry key="H1" value="6.972875093350837" />
+      <entry key="H2" value="6.986366238770326" />
+      <entry key="H4" value="6.993165185960903" />
+      <entry key="D1" value="6.998858364486543" />
+      <entry key="W1" value="6.999836847872941" />
+    </decayedShown>
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2026" />
+    <option name="minorVersion" value="3" />
+    <option name="productBranch" value="Classic" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3LkKXIxTUOYt0L57J3yTV7mXlx3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "CMake Application.test.executor": "Run",
+    "CidrDebugProfileConversion": "true",
+    "CidrDebugProfileConversion262": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/codetoil/95-utdr-backport",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
+    "settings.editor.selected.configurable": "Runtime.Targets.Configurable"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$CMakeCurrentBuildDir$/test.exe" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="test" TARGET_NAME="test" CONFIG_NAME="win95-debug" RUN_PATH="/bin/wine">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SelectedDebugProfileService">{
+  &quot;profileIdByStamp&quot;: [
+    {
+      &quot;first&quot;: {
+        &quot;##RUN_CONFIGURATION##&quot;: &quot;CMake Application.test&quot;,
+        &quot;cmake&quot;: null
+      },
+      &quot;second&quot;: &quot;ff21419d-2960-4161-8e19-76e017075a99&quot;
+    },
+    {
+      &quot;first&quot;: {
+        &quot;##RUN_CONFIGURATION##&quot;: &quot;CMake Application.test&quot;,
+        &quot;cmake&quot;: &quot;CMakeBuildProfile:win95-debug&quot;
+      },
+      &quot;second&quot;: &quot;ff21419d-2960-4161-8e19-76e017075a99&quot;
+    },
+    {
+      &quot;first&quot;: {
+        &quot;##RUN_CONFIGURATION##&quot;: &quot;CMake Application.test&quot;,
+        &quot;cmake&quot;: &quot;CMakeBuildProfile:win95-release&quot;
+      },
+      &quot;second&quot;: &quot;ff21419d-2960-4161-8e19-76e017075a99&quot;
+    }
+  ],
+  &quot;modificationCount&quot;: 13
+}</component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="af5aeb6d-4fed-4951-87f9-e8b345bd0918" name="Changes" comment="" />
+      <created>1793992664383</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1793992664383</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
+    <isAutomaticBootstrapAfterUpdate value="false" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="test stuff" />
+  </component>
+</project>

@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="directxTest" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$CMakeCurrentBuildDir$/directxTest.exe" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="directxTest" TARGET_NAME="directxTest" CONFIG_NAME="win95-debug" RUN_PATH="/bin/wine">
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>
