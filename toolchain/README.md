@@ -69,7 +69,7 @@ Do this once per machine, and again after the distro's mingw-w64 GCC is upgraded
 ### Multiple hosts
 
 Each machine has its own checkout of this repository, at whatever path suits it. Its
-`.gitignore` excludes `sysroot/` and `cmake-build-*/`: both are per-host build output (absolute
+`.gitignore` excludes `sysroot` and `cmake-build-*/`: both are per-host build output (absolute
 paths, host-specific CMake caches, CRTs matched to that host's GCC) and must not be shared.
 On each host, check out the repository, clone mingw-w64 (step 2), build the sysroot (step 3),
 and configure the projects there (step 4).

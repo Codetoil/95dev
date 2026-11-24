@@ -21,13 +21,13 @@ set(CMAKE_CROSSCOMPILING_EMULATOR wine)
 # --- C runtime: CRTDLL.dll (ships with every Win95/NT install) instead of msvcrt.dll ---
 #
 # Preferred: this host's P5-safe sysroot, built by <repo>/toolchain/build-sysroot.sh into
-# <repo>/sysroot/<hostname>/ (see <repo>/toolchain/README.md). <repo> is the directory above
+# <repo>/toolchain/sysroot/<hostname>/ (see <repo>/toolchain/README.md). <repo> is the directory above
 # this project, wherever the repository is checked out. The sysroot is configured with
 # --with-default-msvcrt=crtdll, so libmsvcrt.a already *is* CRTDLL and no specs patch is needed.
 # Override with -DWIN95_SYSROOT=<dir>, or -DWIN95_SYSROOT=OFF to force the distro fallback.
 cmake_host_system_information(RESULT WIN95_HOST QUERY HOSTNAME)
 get_filename_component(WIN95_REPO "${CMAKE_CURRENT_LIST_DIR}/.." REALPATH)
-set(WIN95_SYSROOT "${WIN95_REPO}/sysroot/${WIN95_HOST}" CACHE PATH
+set(WIN95_SYSROOT "${WIN95_REPO}/toolchain/sysroot/${WIN95_HOST}" CACHE PATH
         "Per-host P5-safe mingw-w64 sysroot (from build-sysroot.sh); OFF = use distro mingw-w64")
 
 # Default system include list of <compiler> with the distro mingw-w64 include dir swapped

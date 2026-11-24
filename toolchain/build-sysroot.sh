@@ -2,7 +2,7 @@
 # Build a Pentium (P5)-safe mingw-w64 headers + CRT sysroot for THIS host.
 #
 # The CRT must match the host's own i686-w64-mingw32-gcc, so every machine builds its own copy
-# into <repo>/sysroot/<hostname>/, where <repo> is the directory above this script (wherever
+# into <repo>/toolchain/sysroot/<hostname>/, where <repo> is the directory above this script (wherever
 # the repository is checked out). win95-toolchain.cmake picks that directory up automatically
 # (matched by hostname) and falls back to the distro's mingw-w64 when it is missing.
 #
@@ -14,8 +14,8 @@ set -euo pipefail
 [ $# -eq 1 ] || { echo "usage: $(basename "$0") <mingw-w64-source-dir>" >&2; exit 2; }
 SRC=$(realpath "$1")
 HOST_NAME=$(hostname)                      # must match CMake's cmake_host_system_information(HOSTNAME)
-REPO=$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd -P)
-PREFIX="$REPO/sysroot/$HOST_NAME"
+REPO=$(cd "$(git rev-parse --show-toplevel)" && pwd -P)
+PREFIX="$REPO/toolchain/sysroot/$HOST_NAME"
 BUILD="$SRC/build-$HOST_NAME"              # per-host out-of-tree build dir
 TARGET=i686-w64-mingw32
 JOBS=${JOBS:-$(nproc)}
